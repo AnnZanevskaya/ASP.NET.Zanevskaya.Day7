@@ -32,10 +32,6 @@ namespace Task3.Library
             if (size == array.Length)
             {
                 int newcapacity = array.Length * 3;
-                if (newcapacity < array.Length + 4)
-                {
-                    newcapacity = array.Length + 4;
-                }
                 T[] newQueue = new T[newcapacity];
                 SetCapacity(newcapacity);
             }
