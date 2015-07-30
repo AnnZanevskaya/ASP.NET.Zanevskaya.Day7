@@ -21,7 +21,7 @@ namespace Task1.Library
 
     public class ClockManager
     {
-        public event EventHandler<TimeOverEventArgs> TimeOver;
+        public event EventHandler<TimeOverEventArgs> TimeOver = delegate {};
 
         protected virtual void OnTimeOver(TimeOverEventArgs e)
         {
